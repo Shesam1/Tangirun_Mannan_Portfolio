@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>Image Map Project</title>
+
+<style>
+	body {
+		font-family: Helvetica, Arial, sans-serif;
+		background-color: lightcoral;
+	}
+	h1 {
+		font-size: 20px;
+	}
+	div {
+		width: 100%;
+	}
+	img[usemap] {
+		border: none;
+		height: auto;
+		max-width: 100%;
+		width: auto;
+	}
+	</style>
+
+</head>
+
+<body>
+<center>
+<header>
+<h1>
+
+	Map Of Japan
+</h1>
+
+<h2>
+
+	A Distinctly Unique Archipelago
+</h2>
+
+</header>
+
+<main>
+
+<img src="mapofjapan.jpg" alt="" width="466" height="350" usemap="#Map"/>
+<map name="Map">
+  <area shape="rect" coords="258,213,342,236" href="http://www.Tokyo.com" alt="Tokyo" title="Tokyo">
+
+  <area shape="circle" coords="227,223,15" href="https://www.japan-guide.com/e/e2172.html" alt="Mt. Fuji" title="Mt. Fuji">
+
+
+
+  <area shape="poly" coords="111,139,92,150,125,157" href="http://www.Okinawa.com" alt="Okinawa City" title="Okinawa City">
+
+
+
+  <area shape="poly" coords="95,288,116,289,104,303" href="https://www.japan-guide.com/e/e2162.html" alt="Nagasaki" title="Nagasaki">
+
+
+
+  <area shape="poly" coords="307,22,275,76,347,72" href="https://www.japan-guide.com/list/e1101.html" alt="Hokkaido" title="Hokkaido">
+
+
+  <area shape="poly" coords="163,241,201,237,202,250" href="https://kyoto.travel/en" alt="Kyoto" title="Kyoto">
+
+
+  <area shape="poly" coords="195,255,156,262,160,248" href="http://www.Osaka.com" alt="Osaka" title="Osaka">
+
+  <area shape="poly" coords="124,249,145,253,136,266" href="http://visithiroshima.net/" alt="Hiroshima" title="Hiroshima">
+
+
+  <area shape="poly" coords="213,243,236,243,222,261" href="https://www.japan-guide.com/e/e2155.html" alt="Nagoya" title="Nagoya">
+
+</map>
+
+</main>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="jquery.rwdImageMaps.min.js"></script>
+<script>
+$(document).ready(function(e) {
+	$('img[usemap]').rwdImageMaps();
+
+	$('area').on('click', function() {
+		alert($(this).attr('alt') + ' clicked');
+	});
+});
+</script>
+
+</center>
+</body>
+</html>

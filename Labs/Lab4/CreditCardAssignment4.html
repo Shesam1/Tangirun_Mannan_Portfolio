@@ -1,0 +1,99 @@
+<!--Tangirun Mannan-->
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<title>Credit Card Assignment</title>
+<!--Made a looping video as my background and then fixed the position of my content to enable it to be seen on top of it-->
+<style type="text/css">
+
+
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+	}
+	
+.content {
+	text-align: center;
+    margin: 10px auto 10px auto;
+    position: fixed;
+	top: 200px;
+	bottom: 200px;
+	left: 200px;
+	right: 200px;
+    background: rgba(0, 153, 76, 0.5);
+    color: #910c29;
+    width: 25%;
+    padding: 20px auto;
+}
+
+
+
+
+
+</style>
+
+</head>
+
+
+
+<body>
+
+<video autoplay muted loop id="myVideo">
+  <source src="video/lights.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+
+
+<div class="content">
+
+<h1>Credit Card Validation</h1>
+<p> Enter your credit card number for validation please: </p> 
+
+<!--Used form validation and tied it to a button-->
+	
+<form>
+<input type="number" id="credit" name="card#" placeholder="Input Credit Card">
+<button type="button" onclick="validateCreditCard()">Submit</button>	
+</form>
+
+<p id="authorize"></p>
+
+<script type="text/javascript">
+
+// tied the function to the button	
+
+
+function validateCreditCard() {
+var x, text;
+	x = document.getElementById("credit").value;
+	if (isNaN(x) || x<=1111111111111111 || x==" " || (x%2)!==0 || x.length!==16 || x%2222222222222222==0) {
+		text = "Invalid";
+		console.log("False");
+	} else {
+		text = "We sincerely thank you for your time! Please come again!";
+		console.log("True");
+		}
+	document.getElementById("authorize").innerHTML= text;
+}
+	
+</script>
+
+</div>
+
+	
+	
+	
+	
+
+	
+
+</body>
+</html>

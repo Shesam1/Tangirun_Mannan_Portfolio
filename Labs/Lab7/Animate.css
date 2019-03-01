@@ -1,0 +1,26 @@
+#ani {
+
+background-color: darkcyan;
+height: 150px;
+width:150px;
+position: absolute;
+
+}
+
+#signa {
+background-color: yellow;
+height: 100px;
+width: 100px;
+position: relative;
+border-radius: 50px;
+
+
+}
+
+body {
+  background-color: #f7a67b;
+}
+
+body h1 {
+  color: white;
+}

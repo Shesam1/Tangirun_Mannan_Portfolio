@@ -1,0 +1,69 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Assignment 3</title>
+
+<style>
+
+
+
+             body {
+			    color:antiquewhite;
+                background-color:darkseagreen;
+				font-family:monospace;
+				font-size:17px;
+				   }
+			.register {
+                border: 4px ridge #FBC301;
+				    }
+		</style>
+
+
+</head>
+
+<body>
+<center>
+
+<h1>Welcome to Our Grocery Store!</h1>
+
+<img class="register" src="https://upload.wikimedia.org/wikipedia/commons/8/86/Cash_register%2C_built_1904_in_Ohio.jpg" alt="antique cash register" width="800px">
+
+<p id="TOTAL"></p>
+
+
+<script type="text/javascript">
+
+function cashRegister() {
+var cart = ["greentea", "pineapple", "spongecake", "tofu", "darkchocolate", "miso"];
+
+var numcart	= new Array();
+  for (i=0; i<cart.length; i++){
+  numcart.push(prompt("How much " + cart[i] + " do you want?"));}
+
+
+var price = [1.25, 1.99, 5, 2.25, 2, 2.34];
+
+
+var subtotal = new Array();
+	for (i=0; i<cart.length; i++) {
+	subtotal.push(numcart[i]*price[i]);
+}
+
+
+var total = 0
+  for (i=0; i<cart.length; i++) {
+  total += subtotal[i];
+}
+document.getElementById("TOTAL").innerHTML = "The final cost of your shopping cart is $" + total;
+}
+
+cashRegister();
+
+
+
+
+	</script>
+</center>
+</body>
+</html>

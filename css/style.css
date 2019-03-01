@@ -1,0 +1,249 @@
+* {
+  box-sizing: border-box;
+  }
+
+body {
+  margin: 0;
+  background-color: #4d4d4d;
+}
+
+body html {
+  height: 100%;
+  margin: 0;
+font: 400 15px/1.8 "Lato", sans-serif;
+}
+
+header {
+  padding: 250px;
+  text-align: center;
+  background-image: url("../pics/bird.jpg");
+  min-height: 1000px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.85;
+  color: #ffffff;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+header h4{
+  font-size: 20px;
+}
+
+
+
+
+.sidenav {
+    overflow-x: hidden;
+    height: 100%;
+    width: 110px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #d44865;
+    padding-top: 20px;
+}
+
+/* Style the navigation bar links */
+.sidenav a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none; /* Remove underline */
+    font-size: 20px;
+    width: 110px;
+}
+
+.sidenav a:hover {
+    background-color: #f7a67b;
+    color: darkcyan;
+    width: 110px;
+}
+
+.sidenav a.active {
+    background-color: #5225d8;
+    color: white;
+}
+
+
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/*
+.sticky + .content {
+  padding-top: 60px;
+}
+
+*/
+
+
+.send{
+  color: pink;
+}
+
+.social{
+  margin-right: 100px;
+}
+
+.fa-github-alt{
+  color: pink;
+}
+
+
+.fa-linkedin-in{
+  color: pink;
+}
+
+
+footer {
+    padding: 5px;
+    text-align: center;
+    background: darkcyan;
+    color: #f7a67b;
+}
+.work {
+  padding: 20px;
+  margin: 0;
+  background-color: #f88aaf;
+  color: darkcyan;
+  text-align: center;
+}
+
+/*
+.content{
+  background-color: gray;
+  padding: 20px;
+  text-align: center;
+}
+*/
+
+
+.card {
+  background-color: #ffb2b2;
+  color: #ffffff;
+  text-align: center;
+}
+.card-img-top {
+  height: 200px;
+}
+.card-header  {
+  background-color: #dd3497;
+}
+
+.card-img-top {
+  width:100%!important;
+  height: 200px!important;
+  object-fit: cover;
+}
+
+
+
+/*
+.col-sm-3{
+
+}
+*/
+
+.lab {
+    background-image: url("../pics/candy.jpg");
+    min-height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.85;
+    color: #23c8b2;
+    font-size: 20px;
+    margin: 0;
+    padding: 250px;
+}
+
+#greet {
+  text-align: center;
+  padding: 250px;
+  background-image: url("../pics/fly.jpg");
+  min-height: 1000px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.85;
+  color: #23c8b2;
+  font-size: 30px;
+}
+
+.resume {
+  padding: 20px;
+  margin: 0;
+  background-color: #9163b6;
+  color: #f88aaf;
+  text-align: center;
+}
+
+.exp {
+  background-image: url("../pics/clouds.jpg");
+  min-height: 1000px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.85;
+  color: #4e2472;
+  font-size: 30px;
+  text-align: center;
+  margin: 0;
+  padding: 250px;
+}
+
+.contact {
+  padding: 20px;
+  margin: 0;
+  background-color: darkcyan;
+  color: #f7a67b;
+  text-align: center;
+}
+
+.email {
+  background-image: url("../pics/dusk.jpg");
+  min-height: 1000px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.85;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  margin: 0;
+  padding: 250px;
+}
+
+
+
+
+
+@media screen and (max-width: 400px) {
+  nav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+    div {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,10 @@
+document.getElementById('info-Name').textContent = stateData[this.value].Name;
+document.getElementById('info-Occupation').textContent = stateData[this.value].Occupation;
+document.getElementById('info-Residence').textContent = stateData[this.value].Residence;
+document.getElementById('info-Age').textContent = stateData[this.value].Age;
+document.getElementById('info-Birthday').textContent = stateData[this.value].Birthday;
+document.getElementById('info-Bounty').textContent = stateData[this.value].Bounty;
+document.getElementById('info-DevilFruit').textContent = stateData[this.value].DevilFruit;
+document.getElementById('info-Alias').textContent = stateData[this.value].Alias;
+document.getElementById('info-Affiliation').textContent = stateData[this.value].Affiliation;
+document.getElementById('info-Status').textContent = stateData[this.value].Status;
